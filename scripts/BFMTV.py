@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
                 'https' : sys.argv[1]
               }
 
-na = 'https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/main/assets/moose_na.m3u'
+na = 'https://raw.githubusercontent.com/naveenland4/UTLive/main/assets/info.m3u8'
 def grab(line):
     try:
         _id = line.split('/')[4]
@@ -39,7 +39,7 @@ print('#EXTM3U')
 print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
 s = requests.Session()
-with open('../dailymotion_channel_info3.txt') as f:
+with open('../BFMTV_info.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
