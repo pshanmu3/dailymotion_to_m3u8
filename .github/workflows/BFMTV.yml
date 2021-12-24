@@ -32,8 +32,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x autorun_github3.sh
-          ./autorun_github3.sh
+          chmod +x BFMTV.sh
+          ./BFMTV.sh
           #cd scripts
           #python3 BFMTV.py > ../BFMTV.m3u8
           echo "m3u grabbed"
